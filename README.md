@@ -1,5 +1,8 @@
 # showit
 
+A platform to show your project to the world.
+
+
 
 ## to generate assets
 ## to generate router
