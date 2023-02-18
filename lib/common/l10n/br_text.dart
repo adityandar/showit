@@ -11,4 +11,7 @@ class BrText {
   static const health = 'Health';
   static const foodDrinks = 'Food & Drinks';
   static const projectBy = 'Project by:';
+  static const detailProject = 'Detail Project';
+  static const description = 'Description';
+  static const owner = 'Owner';
 }
