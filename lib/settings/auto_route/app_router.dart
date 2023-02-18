@@ -18,6 +18,7 @@ part 'app_router.gr.dart';
         AutoRoute(page: ProfilePage),
       ],
     ),
+    AutoRoute(page: ProjectDetailPage),
   ],
 )
 // extend the generated private router
