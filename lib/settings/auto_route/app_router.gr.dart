@@ -29,6 +29,12 @@ class _$AppRouter extends RootStackRouter {
         child: const MainPage(),
       );
     },
+    ProjectDetailRoute.name: (routeData) {
+      return MaterialPageX<dynamic>(
+        routeData: routeData,
+        child: const ProjectDetailPage(),
+      );
+    },
     ExploreRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
         routeData: routeData,
@@ -87,6 +93,10 @@ class _$AppRouter extends RootStackRouter {
             ),
           ],
         ),
+        RouteConfig(
+          ProjectDetailRoute.name,
+          path: '/project-detail-page',
+        ),
       ];
 }
 
@@ -113,6 +123,18 @@ class MainRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'MainRoute';
+}
+
+/// generated route for
+/// [ProjectDetailPage]
+class ProjectDetailRoute extends PageRouteInfo<void> {
+  const ProjectDetailRoute()
+      : super(
+          ProjectDetailRoute.name,
+          path: '/project-detail-page',
+        );
+
+  static const String name = 'ProjectDetailRoute';
 }
 
 /// generated route for
