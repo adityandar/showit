@@ -23,27 +23,35 @@ class CustomNavbarItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => onTap(index),
-      behavior: HitTestBehavior.translucent,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          SvgPicture.asset(
-            iconPath,
-            width: 24.w,
-            height: 24.w,
-            color: isActive ? BrColor.primaryDarkBlue01 : BrColor.neutralGrey01,
+    return Expanded(
+      child: GestureDetector(
+        onTap: () => onTap(index),
+        behavior: HitTestBehavior.translucent,
+        child: Container(
+          color: BrColor.neutralWhite,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              SvgPicture.asset(
+                iconPath,
+                width: 24.w,
+                height: 24.w,
+                color: isActive
+                    ? BrColor.primaryDarkBlue01
+                    : BrColor.neutralGrey01,
+              ),
+              SizedBox(height: 2.w),
+              Text(
+                label,
+                style: BrTypo.captionRegular(
+                  color: isActive
+                      ? BrColor.primaryDarkBlue01
+                      : BrColor.neutralGrey01,
+                ),
+              ),
+            ],
           ),
-          SizedBox(height: 2.w),
-          Text(
-            label,
-            style: BrTypo.captionRegular(
-              color:
-                  isActive ? BrColor.primaryDarkBlue01 : BrColor.neutralGrey01,
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }

@@ -22,16 +22,16 @@ class MainPage extends StatelessWidget {
 
         return Container(
           padding: EdgeInsets.fromLTRB(
-            16.w,
-            16.w,
-            16.w,
+            8.w,
+            12.w,
+            8.w,
             24.w,
           ),
           decoration: BoxDecoration(
             color: BrColor.neutralWhite,
             boxShadow: [
               BoxShadow(
-                offset: Offset(0, -25),
+                offset: const Offset(0, -15),
                 blurRadius: 15,
                 color: BrColor.primaryDarkBlue01.withOpacity(0.08),
               ),
