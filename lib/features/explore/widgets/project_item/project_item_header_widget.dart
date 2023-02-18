@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:showit/common/common.dart';
 
-import 'index.dart';
-
 class ProjectItemHeaderWidget extends StatelessWidget {
   const ProjectItemHeaderWidget({
     Key? key,
@@ -13,7 +11,7 @@ class ProjectItemHeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const ProjectIconWidget(
+        const ProjectIcon(
           url:
               'https://1000logos.net/wp-content/uploads/2022/12/Punjab-Police-Logo-500x281.png',
         ),
