@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:showit/common/common.dart';
-import 'package:showit/features/explore/widgets/index.dart';
 
 import '../../../dependencies/dependencies.dart';
-import '../views/index.dart';
+import 'views/index.dart';
 
 @RoutePage()
 class ExplorePage extends StatelessWidget {
@@ -17,16 +15,10 @@ class ExplorePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(height: kToolbarHeight + 5.w),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.w),
-            child: Text(
-              BrText.explore,
-              style: BrTypo.headingH1Bold(),
-            ),
-          ),
+          const ExploreSearchAndFilterView(),
           SizedBox(height: 16.w),
-          const CategoryHorizontalListView(),
-          SizedBox(height: 24.w),
+          // const CategoryHorizontalListView(),
+          // SizedBox(height: 24.w),
           Expanded(
             child: SingleChildScrollView(
               child: Column(children: [

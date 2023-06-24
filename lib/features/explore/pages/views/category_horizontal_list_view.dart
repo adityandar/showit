@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:showit/common/common.dart';
 
-import '../widgets/index.dart';
+import 'widgets/index.dart';
 
 class CategoryHorizontalListView extends StatelessWidget {
   const CategoryHorizontalListView({
