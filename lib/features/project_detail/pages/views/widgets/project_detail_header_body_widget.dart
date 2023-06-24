@@ -9,12 +9,10 @@ class ProjectDetailHeaderBodyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FlexibleSpaceBar(
-      collapseMode: CollapseMode.parallax,
-      background: Column(
+    return SliverToBoxAdapter(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(height: kToolbarHeight + 38.w),
           SizedBox(height: 16.w),
           CmpProjectIcon(
             url:
@@ -60,6 +58,7 @@ class ProjectDetailHeaderBodyWidget extends StatelessWidget {
             'Released June, 21 2022',
             style: BrTypo.captionRegular(color: BrColor.neutralBlack05),
           ),
+          SizedBox(height: 16.w),
         ],
       ),
     );

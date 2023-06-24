@@ -5,12 +5,16 @@ import 'package:showit/dependencies/dependencies.dart';
 class ProjectDetailHeaderTitleWidget extends StatelessWidget {
   const ProjectDetailHeaderTitleWidget({
     super.key,
+    required this.isDetailHeaderBodyHidden,
   });
+
+  final bool isDetailHeaderBodyHidden;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 2.w),
+      color: BrColor.neutralWhite,
+      padding: EdgeInsets.symmetric(horizontal: 15.w),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -23,7 +27,7 @@ class ProjectDetailHeaderTitleWidget extends StatelessWidget {
             onTap: context.popRoute,
           ),
           Text(
-            BrText.detailProject,
+            isDetailHeaderBodyHidden ? 'Art Enthusiast' : BrText.detailProject,
             style: BrTypo.headingH3Regular(),
           ),
           CmpIconButton(
