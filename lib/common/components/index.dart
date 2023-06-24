@@ -1,5 +1,5 @@
-export 'clap_support_button.dart';
-export 'custom_image.dart';
-export 'custom_navbar_item.dart';
-export 'my_icon_button.dart';
-export 'project_icon.dart';
+export 'cmp_clap_support_button.dart';
+export 'cmp_custom_image.dart';
+export 'cmp_icon_button.dart';
+export 'cmp_navbar_item.dart';
+export 'cmp_project_icon.dart';

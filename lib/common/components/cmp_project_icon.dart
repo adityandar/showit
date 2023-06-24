@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:showit/common/common.dart';
 
-class ProjectIcon extends StatelessWidget {
-  const ProjectIcon({
+class CmpProjectIcon extends StatelessWidget {
+  const CmpProjectIcon({
     Key? key,
     required this.url,
     this.size,
@@ -16,7 +16,7 @@ class ProjectIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomImage(
+    return CmpCustomImage(
       url: url,
       width: size ?? 45.w,
       customBoxDecoration: BoxDecoration(

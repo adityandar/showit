@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:showit/common/common.dart';
 import 'package:showit/dependencies/dependencies.dart';
 
-class MyIconButton extends StatelessWidget {
-  const MyIconButton({
+class CmpIconButton extends StatelessWidget {
+  const CmpIconButton({
     super.key,
     required this.icon,
     required this.onTap,

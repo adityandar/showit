@@ -16,7 +16,7 @@ class ProjectDetailHeaderBodyWidget extends StatelessWidget {
         children: [
           SizedBox(height: kToolbarHeight + 38.w),
           SizedBox(height: 16.w),
-          ProjectIcon(
+          CmpProjectIcon(
             url:
                 'https://1000logos.net/wp-content/uploads/2023/02/Indian-Army-Logo-500x281.png',
             size: 80.w,

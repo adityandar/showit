@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:showit/common/common.dart';
 
-class CustomNavbarItem extends StatelessWidget {
-  const CustomNavbarItem({
+class CmpNavbarItem extends StatelessWidget {
+  const CmpNavbarItem({
     super.key,
     required this.iconPath,
     required this.label,

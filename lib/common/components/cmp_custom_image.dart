@@ -2,8 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:shimmer_animation/shimmer_animation.dart';
 
-class CustomImage extends StatelessWidget {
-  const CustomImage({
+class CmpCustomImage extends StatelessWidget {
+  const CmpCustomImage({
     super.key,
     required this.url,
     required this.width,
@@ -40,6 +40,12 @@ class CustomImage extends StatelessWidget {
           decoration: (customBoxDecoration ?? const BoxDecoration()).copyWith(
             shape: isCircle ? BoxShape.circle : BoxShape.rectangle,
           ),
+        ),
+      ),
+      errorWidget: (context, url, error) => ClipRRect(
+        child: Placeholder(
+          fallbackWidth: width,
+          fallbackHeight: height ?? width,
         ),
       ),
     );

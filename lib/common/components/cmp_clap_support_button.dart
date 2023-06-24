@@ -4,8 +4,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:showit/assets/assets.gen.dart';
 import 'package:showit/common/common.dart';
 
-class ClapSupportButton extends StatelessWidget {
-  const ClapSupportButton({
+class CmpClapSupportButton extends StatelessWidget {
+  const CmpClapSupportButton({
     super.key,
     this.isSupported = false,
     this.amount = 0,

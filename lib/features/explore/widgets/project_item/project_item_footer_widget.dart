@@ -22,7 +22,7 @@ class ProjectItemFooterWidget extends StatelessWidget {
                 SizedBox(height: 4.w),
                 Row(
                   children: [
-                    CustomImage(
+                    CmpCustomImage(
                       url:
                           'https://this-person-does-not-exist.com/img/avatar-7ab31c4cebfab2ff79ac1b6002ac3bf1.jpg',
                       width: 32.w,
@@ -39,7 +39,7 @@ class ProjectItemFooterWidget extends StatelessWidget {
             ),
           ),
           SizedBox(width: 24.w),
-          ClapSupportButton(
+          CmpClapSupportButton(
             isSupported: false,
           ),
         ],

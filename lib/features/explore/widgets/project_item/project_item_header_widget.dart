@@ -11,7 +11,7 @@ class ProjectItemHeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const ProjectIcon(
+        const CmpProjectIcon(
           url:
               'https://1000logos.net/wp-content/uploads/2022/12/Punjab-Police-Logo-500x281.png',
         ),

@@ -14,7 +14,7 @@ class ProjectDetailHeaderTitleWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          MyIconButton(
+          CmpIconButton(
             icon: Icon(
               Icons.arrow_back_rounded,
               color: BrColor.neutralBlack01,
@@ -26,7 +26,7 @@ class ProjectDetailHeaderTitleWidget extends StatelessWidget {
             BrText.detailProject,
             style: BrTypo.headingH3Regular(),
           ),
-          MyIconButton(
+          CmpIconButton(
             icon: Icon(
               Icons.share_outlined,
               size: 24.w,
