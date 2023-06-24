@@ -17,6 +17,10 @@ class $AssetsSvgsGen {
   /// File path: assets/svgs/ic_case.svg
   SvgGenImage get icCase => const SvgGenImage('assets/svgs/ic_case.svg');
 
+  /// File path: assets/svgs/ic_chevron_right.svg
+  SvgGenImage get icChevronRight =>
+      const SvgGenImage('assets/svgs/ic_chevron_right.svg');
+
   /// File path: assets/svgs/ic_clap_active.svg
   SvgGenImage get icClapActive =>
       const SvgGenImage('assets/svgs/ic_clap_active.svg');
@@ -24,6 +28,10 @@ class $AssetsSvgsGen {
   /// File path: assets/svgs/ic_clap_inactive.svg
   SvgGenImage get icClapInactive =>
       const SvgGenImage('assets/svgs/ic_clap_inactive.svg');
+
+  /// File path: assets/svgs/ic_edit_profile.svg
+  SvgGenImage get icEditProfile =>
+      const SvgGenImage('assets/svgs/ic_edit_profile.svg');
 
   /// File path: assets/svgs/ic_explore.svg
   SvgGenImage get icExplore => const SvgGenImage('assets/svgs/ic_explore.svg');
@@ -43,20 +51,30 @@ class $AssetsSvgsGen {
   /// File path: assets/svgs/ic_search.svg
   SvgGenImage get icSearch => const SvgGenImage('assets/svgs/ic_search.svg');
 
+  /// File path: assets/svgs/ic_sign_out.svg
+  SvgGenImage get icSignOut => const SvgGenImage('assets/svgs/ic_sign_out.svg');
+
+  /// File path: assets/svgs/ic_support.svg
+  SvgGenImage get icSupport => const SvgGenImage('assets/svgs/ic_support.svg');
+
   $AssetsSvgsSocialMediaGen get socialMedia =>
       const $AssetsSvgsSocialMediaGen();
 
   /// List of all assets
   List<SvgGenImage> get values => [
         icCase,
+        icChevronRight,
         icClapActive,
         icClapInactive,
+        icEditProfile,
         icExplore,
         icFilter,
         icGlobe,
         icMail,
         icProfile,
-        icSearch
+        icSearch,
+        icSignOut,
+        icSupport
       ];
 }
 
