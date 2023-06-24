@@ -14,7 +14,6 @@ class MainPage extends StatelessWidget {
     return AutoTabsScaffold(
       routes: const [
         ExploreRoute(),
-        SearchRoute(),
         MyProjectRoute(),
         ProfileRoute(),
       ],
@@ -49,23 +48,16 @@ class MainPage extends StatelessWidget {
                 onTap: tabsRouter.setActiveIndex,
               ),
               CmpNavbarItem(
-                iconPath: Assets.svgs.icSearch.keyName,
-                label: BrText.search,
-                index: 1,
-                activeTabIndex: activeTabIndex,
-                onTap: tabsRouter.setActiveIndex,
-              ),
-              CmpNavbarItem(
                 iconPath: Assets.svgs.icCase.keyName,
                 label: BrText.myProject,
-                index: 2,
+                index: 1,
                 activeTabIndex: activeTabIndex,
                 onTap: tabsRouter.setActiveIndex,
               ),
               CmpNavbarItem(
                 iconPath: Assets.svgs.icProfile.keyName,
                 label: BrText.profile,
-                index: 3,
+                index: 2,
                 activeTabIndex: activeTabIndex,
                 onTap: tabsRouter.setActiveIndex,
               ),

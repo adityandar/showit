@@ -16,7 +16,6 @@ class AppRouter extends _$AppRouter {
       path: '/',
       children: [
         AutoRoute(page: ExploreRoute.page),
-        AutoRoute(page: SearchRoute.page),
         AutoRoute(page: MyProjectRoute.page),
         AutoRoute(page: ProfileRoute.page),
       ],
