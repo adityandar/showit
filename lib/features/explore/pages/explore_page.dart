@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:showit/common/common.dart';
 import 'package:showit/features/explore/widgets/index.dart';
 
+import '../../../dependencies/dependencies.dart';
 import '../views/index.dart';
 
+@RoutePage()
 class ExplorePage extends StatelessWidget {
   const ExplorePage({super.key});
 

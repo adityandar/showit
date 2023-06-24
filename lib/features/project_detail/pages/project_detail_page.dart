@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:showit/common/common.dart';
-import 'package:showit/dependencies/dependencies.dart';
 
+import '../../../dependencies/dependencies.dart';
 import 'index.dart';
 
+@RoutePage()
 class ProjectDetailPage extends StatefulWidget {
   const ProjectDetailPage({super.key});
 
@@ -32,14 +33,15 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
             tabController: _tabController,
           ),
         ],
-        body: ListView.builder(
-          padding: EdgeInsets.only(top: 32.w),
-          itemBuilder: (context, index) => Container(
-            color: index % 2 == 0 ? Colors.blue : Colors.red,
-            child: Text(
-              'Text $index',
-            ),
-          ),
+        body: ScrollablePositionedList.builder(
+          itemCount: 2,
+          itemBuilder: (context, index) {
+            return Container(
+              height: 500.w,
+              width: 1.sw,
+              color: index == 0 ? Colors.red : Colors.blue,
+            );
+          },
         ),
       ),
     );

@@ -1,25 +1,26 @@
-import 'package:flutter/material.dart';
 import 'package:showit/dependencies/dependencies.dart';
 
 import '../../features/features.dart';
 
 part 'app_router.gr.dart';
 
-@MaterialAutoRouter(
-  replaceInRouteName: 'Page,Route',
-  routes: <AutoRoute>[
-    AutoRoute(page: AuthLoginPage, initial: true),
+@AutoRouterConfig()
+class AppRouter extends _$AppRouter {
+  @override
+  RouteType get defaultRouteType => const RouteType.material();
+
+  @override
+  final List<AutoRoute> routes = [
     AutoRoute(
-      page: MainPage,
+      page: MainRoute.page,
+      path: '/',
       children: [
-        AutoRoute(page: ExplorePage),
-        AutoRoute(page: SearchPage),
-        AutoRoute(page: MyProjectPage),
-        AutoRoute(page: ProfilePage),
+        AutoRoute(page: ExploreRoute.page),
+        AutoRoute(page: SearchRoute.page),
+        AutoRoute(page: MyProjectRoute.page),
+        AutoRoute(page: ProfileRoute.page),
       ],
     ),
-    AutoRoute(page: ProjectDetailPage),
-  ],
-)
-// extend the generated private router
-class AppRouter extends _$AppRouter {}
+    AutoRoute(page: ProjectDetailRoute.page),
+  ];
+}

@@ -1,115 +1,147 @@
-// **************************************************************************
-// AutoRouteGenerator
-// **************************************************************************
-
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 // **************************************************************************
-// AutoRouteGenerator
+// AutoRouterGenerator
 // **************************************************************************
-//
+
 // ignore_for_file: type=lint
+// coverage:ignore-file
 
 part of 'app_router.dart';
 
-class _$AppRouter extends RootStackRouter {
-  _$AppRouter([GlobalKey<NavigatorState>? navigatorKey]) : super(navigatorKey);
+abstract class _$AppRouter extends RootStackRouter {
+  // ignore: unused_element
+  _$AppRouter({super.navigatorKey});
 
   @override
   final Map<String, PageFactory> pagesMap = {
-    AuthLoginRoute.name: (routeData) {
-      return MaterialPageX<dynamic>(
-        routeData: routeData,
-        child: const AuthLoginPage(),
-      );
-    },
-    MainRoute.name: (routeData) {
-      return MaterialPageX<dynamic>(
-        routeData: routeData,
-        child: const MainPage(),
-      );
-    },
-    ProjectDetailRoute.name: (routeData) {
-      return MaterialPageX<dynamic>(
-        routeData: routeData,
-        child: const ProjectDetailPage(),
-      );
-    },
     ExploreRoute.name: (routeData) {
-      return MaterialPageX<dynamic>(
+      return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const ExplorePage(),
       );
     },
     SearchRoute.name: (routeData) {
-      return MaterialPageX<dynamic>(
+      return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const SearchPage(),
       );
     },
-    MyProjectRoute.name: (routeData) {
-      return MaterialPageX<dynamic>(
-        routeData: routeData,
-        child: const MyProjectPage(),
-      );
-    },
     ProfileRoute.name: (routeData) {
-      return MaterialPageX<dynamic>(
+      return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const ProfilePage(),
       );
     },
+    AuthLoginRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const AuthLoginPage(),
+      );
+    },
+    MyProjectRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const MyProjectPage(),
+      );
+    },
+    ProjectDetailRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const ProjectDetailPage(),
+      );
+    },
+    MainRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const MainPage(),
+      );
+    },
   };
+}
 
-  @override
-  List<RouteConfig> get routes => [
-        RouteConfig(
-          AuthLoginRoute.name,
-          path: '/',
-        ),
-        RouteConfig(
-          MainRoute.name,
-          path: '/main-page',
-          children: [
-            RouteConfig(
-              ExploreRoute.name,
-              path: 'explore-page',
-              parent: MainRoute.name,
-            ),
-            RouteConfig(
-              SearchRoute.name,
-              path: 'search-page',
-              parent: MainRoute.name,
-            ),
-            RouteConfig(
-              MyProjectRoute.name,
-              path: 'my-project-page',
-              parent: MainRoute.name,
-            ),
-            RouteConfig(
-              ProfileRoute.name,
-              path: 'profile-page',
-              parent: MainRoute.name,
-            ),
-          ],
-        ),
-        RouteConfig(
-          ProjectDetailRoute.name,
-          path: '/project-detail-page',
-        ),
-      ];
+/// generated route for
+/// [ExplorePage]
+class ExploreRoute extends PageRouteInfo<void> {
+  const ExploreRoute({List<PageRouteInfo>? children})
+      : super(
+          ExploreRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ExploreRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [SearchPage]
+class SearchRoute extends PageRouteInfo<void> {
+  const SearchRoute({List<PageRouteInfo>? children})
+      : super(
+          SearchRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SearchRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [ProfilePage]
+class ProfileRoute extends PageRouteInfo<void> {
+  const ProfileRoute({List<PageRouteInfo>? children})
+      : super(
+          ProfileRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ProfileRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for
 /// [AuthLoginPage]
 class AuthLoginRoute extends PageRouteInfo<void> {
-  const AuthLoginRoute()
+  const AuthLoginRoute({List<PageRouteInfo>? children})
       : super(
           AuthLoginRoute.name,
-          path: '/',
+          initialChildren: children,
         );
 
   static const String name = 'AuthLoginRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [MyProjectPage]
+class MyProjectRoute extends PageRouteInfo<void> {
+  const MyProjectRoute({List<PageRouteInfo>? children})
+      : super(
+          MyProjectRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'MyProjectRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [ProjectDetailPage]
+class ProjectDetailRoute extends PageRouteInfo<void> {
+  const ProjectDetailRoute({List<PageRouteInfo>? children})
+      : super(
+          ProjectDetailRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'ProjectDetailRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for
@@ -118,69 +150,10 @@ class MainRoute extends PageRouteInfo<void> {
   const MainRoute({List<PageRouteInfo>? children})
       : super(
           MainRoute.name,
-          path: '/main-page',
           initialChildren: children,
         );
 
   static const String name = 'MainRoute';
-}
 
-/// generated route for
-/// [ProjectDetailPage]
-class ProjectDetailRoute extends PageRouteInfo<void> {
-  const ProjectDetailRoute()
-      : super(
-          ProjectDetailRoute.name,
-          path: '/project-detail-page',
-        );
-
-  static const String name = 'ProjectDetailRoute';
-}
-
-/// generated route for
-/// [ExplorePage]
-class ExploreRoute extends PageRouteInfo<void> {
-  const ExploreRoute()
-      : super(
-          ExploreRoute.name,
-          path: 'explore-page',
-        );
-
-  static const String name = 'ExploreRoute';
-}
-
-/// generated route for
-/// [SearchPage]
-class SearchRoute extends PageRouteInfo<void> {
-  const SearchRoute()
-      : super(
-          SearchRoute.name,
-          path: 'search-page',
-        );
-
-  static const String name = 'SearchRoute';
-}
-
-/// generated route for
-/// [MyProjectPage]
-class MyProjectRoute extends PageRouteInfo<void> {
-  const MyProjectRoute()
-      : super(
-          MyProjectRoute.name,
-          path: 'my-project-page',
-        );
-
-  static const String name = 'MyProjectRoute';
-}
-
-/// generated route for
-/// [ProfilePage]
-class ProfileRoute extends PageRouteInfo<void> {
-  const ProfileRoute()
-      : super(
-          ProfileRoute.name,
-          path: 'profile-page',
-        );
-
-  static const String name = 'ProfileRoute';
+  static const PageInfo<void> page = PageInfo<void>(name);
 }

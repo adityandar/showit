@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:showit/dependencies/dependencies.dart';
 import 'package:showit/settings/settings.dart';
 
+@RoutePage()
 class AuthLoginPage extends StatelessWidget {
   const AuthLoginPage({super.key});
 

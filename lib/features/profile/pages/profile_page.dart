@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../dependencies/dependencies.dart';
+
+@RoutePage()
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
 

@@ -5,6 +5,7 @@ import 'package:showit/settings/auto_route/app_router.dart';
 
 import '../../../common/common.dart';
 
+@RoutePage()
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
 
@@ -40,28 +41,28 @@ class MainPage extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              CustomNavbarItem(
+              CmpNavbarItem(
                 iconPath: Assets.svgs.icExplore.keyName,
                 label: BrText.explore,
                 index: 0,
                 activeTabIndex: activeTabIndex,
                 onTap: tabsRouter.setActiveIndex,
               ),
-              CustomNavbarItem(
+              CmpNavbarItem(
                 iconPath: Assets.svgs.icSearch.keyName,
                 label: BrText.search,
                 index: 1,
                 activeTabIndex: activeTabIndex,
                 onTap: tabsRouter.setActiveIndex,
               ),
-              CustomNavbarItem(
+              CmpNavbarItem(
                 iconPath: Assets.svgs.icCase.keyName,
                 label: BrText.myProject,
                 index: 2,
                 activeTabIndex: activeTabIndex,
                 onTap: tabsRouter.setActiveIndex,
               ),
-              CustomNavbarItem(
+              CmpNavbarItem(
                 iconPath: Assets.svgs.icProfile.keyName,
                 label: BrText.profile,
                 index: 3,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
+import '../../../dependencies/dependencies.dart';
+
+@RoutePage()
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});
 
