@@ -10,6 +10,7 @@ class CmpCustomImage extends StatelessWidget {
     this.height,
     this.customBoxDecoration,
     this.isCircle = false,
+    this.borderRadius,
   });
 
   final String url;
@@ -17,6 +18,7 @@ class CmpCustomImage extends StatelessWidget {
   final double? height;
   final bool isCircle;
   final BoxDecoration? customBoxDecoration;
+  final BorderRadius? borderRadius;
 
   @override
   Widget build(BuildContext context) {
@@ -30,6 +32,7 @@ class CmpCustomImage extends StatelessWidget {
             image: imageProvider,
             fit: BoxFit.cover,
           ),
+          borderRadius: borderRadius,
           shape: isCircle ? BoxShape.circle : BoxShape.rectangle,
         ),
       ),

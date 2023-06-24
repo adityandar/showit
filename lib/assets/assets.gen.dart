@@ -28,15 +28,60 @@ class $AssetsSvgsGen {
   /// File path: assets/svgs/ic_explore.svg
   SvgGenImage get icExplore => const SvgGenImage('assets/svgs/ic_explore.svg');
 
+  /// File path: assets/svgs/ic_filter.svg
+  SvgGenImage get icFilter => const SvgGenImage('assets/svgs/ic_filter.svg');
+
+  /// File path: assets/svgs/ic_globe.svg
+  SvgGenImage get icGlobe => const SvgGenImage('assets/svgs/ic_globe.svg');
+
+  /// File path: assets/svgs/ic_mail.svg
+  SvgGenImage get icMail => const SvgGenImage('assets/svgs/ic_mail.svg');
+
   /// File path: assets/svgs/ic_profile.svg
   SvgGenImage get icProfile => const SvgGenImage('assets/svgs/ic_profile.svg');
 
   /// File path: assets/svgs/ic_search.svg
   SvgGenImage get icSearch => const SvgGenImage('assets/svgs/ic_search.svg');
 
+  $AssetsSvgsSocialMediaGen get socialMedia =>
+      const $AssetsSvgsSocialMediaGen();
+
+  /// List of all assets
+  List<SvgGenImage> get values => [
+        icCase,
+        icClapActive,
+        icClapInactive,
+        icExplore,
+        icFilter,
+        icGlobe,
+        icMail,
+        icProfile,
+        icSearch
+      ];
+}
+
+class $AssetsSvgsSocialMediaGen {
+  const $AssetsSvgsSocialMediaGen();
+
+  /// File path: assets/svgs/social_media/ic_facebook.svg
+  SvgGenImage get icFacebook =>
+      const SvgGenImage('assets/svgs/social_media/ic_facebook.svg');
+
+  /// File path: assets/svgs/social_media/ic_instagram.svg
+  SvgGenImage get icInstagram =>
+      const SvgGenImage('assets/svgs/social_media/ic_instagram.svg');
+
+  /// File path: assets/svgs/social_media/ic_linkedin.svg
+  SvgGenImage get icLinkedin =>
+      const SvgGenImage('assets/svgs/social_media/ic_linkedin.svg');
+
+  /// File path: assets/svgs/social_media/ic_twitter.svg
+  SvgGenImage get icTwitter =>
+      const SvgGenImage('assets/svgs/social_media/ic_twitter.svg');
+
   /// List of all assets
   List<SvgGenImage> get values =>
-      [icCase, icClapActive, icClapInactive, icExplore, icProfile, icSearch];
+      [icFacebook, icInstagram, icLinkedin, icTwitter];
 }
 
 class Assets {

@@ -36,9 +36,10 @@ class CmpNavbarItem extends StatelessWidget {
                 iconPath,
                 width: 24.w,
                 height: 24.w,
-                color: isActive
-                    ? BrColor.primaryDarkBlue01
-                    : BrColor.neutralGrey01,
+                colorFilter: ColorFilter.mode(
+                  isActive ? BrColor.primaryDarkBlue01 : BrColor.neutralGrey01,
+                  BlendMode.srcIn,
+                ),
               ),
               SizedBox(height: 2.w),
               Text(

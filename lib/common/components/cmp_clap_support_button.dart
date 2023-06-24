@@ -30,9 +30,10 @@ class CmpClapSupportButton extends StatelessWidget {
                 : Assets.svgs.icClapInactive.keyName,
             width: 16.w,
             height: 16.w,
-            color: isSupported
-                ? BrColor.primaryDarkBlue01
-                : BrColor.neutralBlack05,
+            colorFilter: ColorFilter.mode(
+              isSupported ? BrColor.primaryDarkBlue01 : BrColor.neutralBlack05,
+              BlendMode.srcIn,
+            ),
           ),
         ),
         SizedBox(width: 2.w),
