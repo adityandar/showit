@@ -28,6 +28,12 @@ class BrText {
   static const hire = 'Hire';
   static const contact = 'Contact';
   static const moreByProjectOwner = 'More by Project Owner';
+  static const searchProject = 'Search Project';
+  static const projectShowed = 'Project Showed';
+  static const likesReceived = 'Likes Received';
+  static const editProfile = 'Edit Profile';
+  static const contactDeveloper = 'Contact Developer';
+  static const signOut = 'Sign Out';
 
   // static const replace = 'replace';
 }
