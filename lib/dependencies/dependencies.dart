@@ -6,6 +6,7 @@ export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:flutter_sticky_header/flutter_sticky_header.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:fluttertoast/fluttertoast.dart';
+export 'package:get_it/get_it.dart';
 export 'package:sliver_tools/sliver_tools.dart';
 export 'package:timeago/timeago.dart';
 
