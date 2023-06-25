@@ -69,16 +69,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
                     sliver: SliverToBoxAdapter(
                       child: ValueListenableBuilder(
                         valueListenable: _currentIndex,
-                        //   builder: (context, index, _) => TabBarView(
-                        //     controller: _tabController,
-                        //     children: [
-                        //       const ProjectDetailDescriptionView(),
-                        //       const ProjectDetailOwnerView(),
-                        //     ],
-                        //   ),
-                        // ),
                         builder: (context, index, _) {
-                          print(index);
                           if (index == 1) {
                             return const ProjectDetailOwnerView();
                           }

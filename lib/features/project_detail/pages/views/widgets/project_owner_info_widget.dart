@@ -54,35 +54,10 @@ class ProjectOwnerInfoWidget extends StatelessWidget {
           ),
         ),
         SizedBox(width: 4.w),
-        Container(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 13,
-            vertical: 9,
-          ).w,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8.r),
-            gradient: const LinearGradient(
-              colors: [
-                BrColor.primaryDarkBlue01,
-                BrColor.primaryLightBlue01,
-              ],
-            ),
-          ),
-          child: Row(
-            children: [
-              SvgPicture.asset(
-                Assets.svgs.icMail.path,
-                width: 24.w,
-              ),
-              SizedBox(width: 6.w),
-              Text(
-                BrText.hire,
-                style: BrTypo.buttonBold(
-                  color: BrColor.neutralWhite,
-                ),
-              ),
-            ],
-          ),
+        CmpGradientButton(
+          title: BrText.hire,
+          svgPath: Assets.svgs.icMail.path,
+          onTap: () {},
         ),
       ],
     );
