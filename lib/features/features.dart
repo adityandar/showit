@@ -1,5 +1,4 @@
-export 'auth_login/auth_login.dart';
-export 'auth_register/auth_register.dart';
+export 'auth/auth.dart';
 export 'explore/explore.dart';
 export 'introduction/introduction.dart';
 export 'main/main.dart';

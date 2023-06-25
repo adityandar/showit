@@ -1,0 +1,1 @@
+export 'register/index.dart';
