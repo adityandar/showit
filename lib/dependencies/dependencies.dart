@@ -8,3 +8,5 @@ export 'package:flutter_svg/flutter_svg.dart';
 export 'package:fluttertoast/fluttertoast.dart';
 export 'package:sliver_tools/sliver_tools.dart';
 export 'package:timeago/timeago.dart';
+
+export 'firebase.dart';

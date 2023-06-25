@@ -12,7 +12,7 @@ class IntroductionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: Padding(
-        padding: EdgeInsets.fromLTRB(16.w, 64.h, 16.w, 24.h),
+        padding: EdgeInsets.fromLTRB(16.w, 8.h, 16.w, 24.h),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
