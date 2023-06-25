@@ -3,8 +3,8 @@ import 'package:showit/dependencies/dependencies.dart';
 import 'package:showit/settings/settings.dart';
 
 @RoutePage()
-class AuthLoginPage extends StatelessWidget {
-  const AuthLoginPage({super.key});
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -24,6 +24,10 @@ class BrColor {
   static const neutralGrey05 = Color(0xFFF5F5F5);
   static const neutralWhite = Color(0xFFFFFFFF);
 
+  static const tertiarySuccess = Color(0xFF58C322);
+  static const tertiaryError = Color(0xFFD41111);
+  static const tertiaryWarning = Color(0xFFFCAA1D);
+
   static const gradient = LinearGradient(
     colors: [
       primaryDarkBlue01,

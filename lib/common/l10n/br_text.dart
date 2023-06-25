@@ -34,6 +34,31 @@ class BrText {
   static const editProfile = 'Edit Profile';
   static const contactDeveloper = 'Contact Developer';
   static const signOut = 'Sign Out';
+  static const introductionTitle =
+      'Showcase Your Projects.\nExpand Your Network.';
+  static const introductionSubtitle =
+      'Unlock limitless opportunities via project showcase and networking, opening doors to success.';
+  static const register = 'Register';
+  static const login = 'Login';
+  static const username = 'Username';
+  static const usernameHintText = 'Enter your username here';
+  static const email = 'Email';
+  static const emailHintText = 'Enter your email here';
+  static const password = 'Password';
+  static const passwordHintText = 'Enter your password here';
+  static const detailInfo = 'Detail Info';
+  static const publicEmail = 'Public Email';
+  static const publicEmailHintText = 'Enter your public email here';
+  static const instagram = 'Instagram';
+  static const instagramHintText = 'Enter your instagram here';
+  static const linkedin = 'LinkedIn';
+  static const linkedinHintText = 'Enter your linkedIn here';
+  static const twitter = 'Twitter';
+  static const twitterHintText = 'Enter your twitter here';
+  static const facebook = 'Facebook';
+  static const facebookHintText = 'Enter your facebook here';
+  static const back = 'Back';
+  static const next = 'Next';
 
   // static const replace = 'replace';
 }
