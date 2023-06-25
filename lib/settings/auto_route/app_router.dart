@@ -11,9 +11,11 @@ class AppRouter extends _$AppRouter {
 
   @override
   final List<AutoRoute> routes = [
+    AutoRoute(page: IntroductionRoute.page, path: '/'),
+    AutoRoute(page: RegisterRoute.page),
+    AutoRoute(page: LoginRoute.page),
     AutoRoute(
       page: MainRoute.page,
-      path: '/',
       children: [
         AutoRoute(page: ExploreRoute.page),
         AutoRoute(page: MyProjectRoute.page),

@@ -11,6 +11,17 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/services.dart';
 
+class $AssetsIllustrationGen {
+  const $AssetsIllustrationGen();
+
+  /// File path: assets/illustration/img_rocket_illustration.png
+  AssetGenImage get imgRocketIllustration =>
+      const AssetGenImage('assets/illustration/img_rocket_illustration.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [imgRocketIllustration];
+}
+
 class $AssetsSvgsGen {
   const $AssetsSvgsGen();
 
@@ -42,11 +53,22 @@ class $AssetsSvgsGen {
   /// File path: assets/svgs/ic_globe.svg
   SvgGenImage get icGlobe => const SvgGenImage('assets/svgs/ic_globe.svg');
 
+  /// File path: assets/svgs/ic_login.svg
+  SvgGenImage get icLogin => const SvgGenImage('assets/svgs/ic_login.svg');
+
   /// File path: assets/svgs/ic_mail.svg
   SvgGenImage get icMail => const SvgGenImage('assets/svgs/ic_mail.svg');
 
+  /// File path: assets/svgs/ic_password.svg
+  SvgGenImage get icPassword =>
+      const SvgGenImage('assets/svgs/ic_password.svg');
+
   /// File path: assets/svgs/ic_profile.svg
   SvgGenImage get icProfile => const SvgGenImage('assets/svgs/ic_profile.svg');
+
+  /// File path: assets/svgs/ic_register.svg
+  SvgGenImage get icRegister =>
+      const SvgGenImage('assets/svgs/ic_register.svg');
 
   /// File path: assets/svgs/ic_search.svg
   SvgGenImage get icSearch => const SvgGenImage('assets/svgs/ic_search.svg');
@@ -56,6 +78,14 @@ class $AssetsSvgsGen {
 
   /// File path: assets/svgs/ic_support.svg
   SvgGenImage get icSupport => const SvgGenImage('assets/svgs/ic_support.svg');
+
+  /// File path: assets/svgs/ic_visibility.svg
+  SvgGenImage get icVisibility =>
+      const SvgGenImage('assets/svgs/ic_visibility.svg');
+
+  /// File path: assets/svgs/ic_visibility_off.svg
+  SvgGenImage get icVisibilityOff =>
+      const SvgGenImage('assets/svgs/ic_visibility_off.svg');
 
   $AssetsSvgsSocialMediaGen get socialMedia =>
       const $AssetsSvgsSocialMediaGen();
@@ -70,11 +100,16 @@ class $AssetsSvgsGen {
         icExplore,
         icFilter,
         icGlobe,
+        icLogin,
         icMail,
+        icPassword,
         icProfile,
+        icRegister,
         icSearch,
         icSignOut,
-        icSupport
+        icSupport,
+        icVisibility,
+        icVisibilityOff
       ];
 }
 
@@ -105,6 +140,7 @@ class $AssetsSvgsSocialMediaGen {
 class Assets {
   Assets._();
 
+  static const $AssetsIllustrationGen illustration = $AssetsIllustrationGen();
   static const $AssetsSvgsGen svgs = $AssetsSvgsGen();
 }
 

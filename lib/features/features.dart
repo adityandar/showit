@@ -1,5 +1,7 @@
 export 'auth_login/auth_login.dart';
+export 'auth_register/auth_register.dart';
 export 'explore/explore.dart';
+export 'introduction/introduction.dart';
 export 'main/main.dart';
 export 'my_project/my_project.dart';
 export 'profile/profile.dart';
