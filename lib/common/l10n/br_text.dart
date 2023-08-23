@@ -1,6 +1,7 @@
 class BrText {
   const BrText._();
 
+  static const showItSplash = 'ShowIt!';
   static const explore = 'Explore';
   static const search = 'Search';
   static const myProject = 'My Project';
@@ -59,6 +60,7 @@ class BrText {
   static const facebookHintText = 'Enter your facebook here';
   static const back = 'Back';
   static const next = 'Next';
+  static const submit = 'Submit';
 
   // static const replace = 'replace';
 }

@@ -7,4 +7,5 @@ export 'cmp_icon_button.dart';
 export 'cmp_navbar_item.dart';
 export 'cmp_password_text_field.dart';
 export 'cmp_project_icon.dart';
+export 'cmp_snackbar.dart';
 export 'cmp_text_field.dart';

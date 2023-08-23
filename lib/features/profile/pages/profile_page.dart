@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:showit/assets/assets.dart';
 import 'package:showit/common/common.dart';
+import 'package:showit/core/index.dart';
 
 import '../../../dependencies/dependencies.dart';
 import 'views/index.dart';
@@ -76,7 +77,9 @@ class ProfilePage extends StatelessWidget {
             ProfileActionItemWidget(
               svgPath: Assets.svgs.icSignOut.path,
               title: BrText.signOut,
-              onTap: () {},
+              onTap: () {
+                context.read<AuthCubit>().logOut();
+              },
             ),
             CmpDivider(
               margin: const EdgeInsets.symmetric(vertical: 8).w,

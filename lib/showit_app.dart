@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:showit/dependencies/dependencies.dart';
 import 'package:showit/settings/settings.dart';
 
+import 'core/index.dart';
+
 class ShowitApp extends StatelessWidget {
   ShowitApp({super.key});
 
@@ -11,13 +13,18 @@ class ShowitApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       builder: (context, child) {
-        return MaterialApp.router(
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            fontFamily: 'Inter',
+        return BlocProvider(
+          create: (_) => AuthCubit(
+            repository: AuthRepositoryImpl(),
+          )..checkLoggedInStatus(),
+          child: MaterialApp.router(
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              fontFamily: 'Inter',
+            ),
+            routerDelegate: _appRouter.delegate(),
+            routeInformationParser: _appRouter.defaultRouteParser(),
           ),
-          routerDelegate: _appRouter.delegate(),
-          routeInformationParser: _appRouter.defaultRouteParser(),
         );
       },
     );

@@ -6,3 +6,4 @@ export 'my_project/my_project.dart';
 export 'profile/profile.dart';
 export 'project_detail/project_detail.dart';
 export 'search/search.dart';
+export 'splash/splash.dart';
